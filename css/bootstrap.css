@@ -4586,6 +4586,8 @@ input[type="button"].btn-block {
 
 .card-title {
   margin-bottom: 0.75rem;
+  font-size: 22px;
+  font-family: "ZCOOL QingKe HuangYou";
 }
 
 .card-subtitle {

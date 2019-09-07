@@ -1,7 +1,10 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Long+Cang|Ma+Shan+Zheng|Noto+Sans+SC|Noto+Serif+SC|ZCOOL+KuaiLe|ZCOOL+QingKe+HuangYou|ZCOOL+XiaoWei|Zhi+Mang+Xing&display=swap');
+
 video {
     position: fixed;
-    right: 0px;
-    bottom: 0px;
+    right: 0;
+    bottom: 0;
     min-width: 100%;
     min-height: 100%;
     height: auto;
@@ -10,7 +13,7 @@ video {
     /*filter: blur(15px); //背景模糊设置 */
     /*-webkit-filter: grayscale(100%);*/
     /*filter:grayscale(100%); //背景灰度设置*/
-    z-index: -2
+    z-index: -2;
 }
 
 source {
@@ -83,6 +86,8 @@ source {
     left: auto;
 }
 
+
+
 /**
     section title css
  */
@@ -99,7 +104,7 @@ source {
     border-radius: 100%;
     box-shadow: 0 0 50px;
     margin-right: 12px;
-    margin-top: 13px;
+    margin-top: 10px;
 }
 
 .section-title div:before, .section-title div:after {
@@ -121,11 +126,13 @@ source {
 
 .section-title h2 {
     color: white;
-    font-size: 36px;
+    font-size: 40px;
+    font-family: "Ma Shan Zheng";
+
 }
 
 /**
-    nav css
+    nav-bar css
  */
 .nav-area {
     position: relative;
@@ -177,9 +184,7 @@ source {
     border-right: 2px solid #ddd;
     visibility: hidden;
     opacity: 0;
-    -webkit-transition: 0.5s ease-in;
-    -moz-transition: 0.5s ease-in;
-    transition: 0.5s ease-in;
+    transition: 0.3s ease-in;
 }
 
 .nav-area ul li:after {
@@ -193,9 +198,7 @@ source {
     border-left: 2px solid #ddd;
     visibility: hidden;
     opacity: 0;
-    -webkit-transition: 0.5s ease-in;
-    -moz-transition: 0.5s ease-in;
-    transition: 0.5s ease-in;
+    transition: 0.3s ease-in;
 }
 
 .nav-area ul li a {
@@ -204,7 +207,8 @@ source {
     text-decoration: none;
     color: #fff;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 23px;
+    font-family: "Noto Sans SC";
     position: relative;
 }
 
@@ -276,14 +280,15 @@ source {
     color: #fff;
     font-size: 80px;
     font-weight: 900;
-    font-family: SimSun;
+    font-family: "ZCOOL XiaoWei";
 }
 
 /**
     about css
  */
 .about {
-    padding-top: 50px;
+    margin-top: 50px;
+    padding-top: 80px;
     padding-bottom: 85px;
     background: rgba(1, 1, 1, 0.2);
 }
@@ -316,7 +321,7 @@ source {
 }
 
 .blog-header {
-    padding-left: 480px;
+    padding-left: 475px;
     margin-bottom: 50px;
 }
 
@@ -330,8 +335,8 @@ source {
 }
 
 .blog .card:hover {
-    box-shadow: 0 0 5px 5px rgba(67, 86, 103, 0.6);
-    transition: 0.5s;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0,0.4);
+    transition: 1s;
 }
 
 /**
@@ -367,6 +372,7 @@ source {
 .sata .sata-item h4 {
     margin-bottom: 0;
     color: white;
+    font-family: "ZCOOL XiaoWei";
 }
 
 .sata .sata-item .number {
@@ -419,10 +425,14 @@ source {
 
 .comment-item h4 {
     color: black;
+    font-size: 30px;
+    font-family: "Liu Jian Mao Cao";
 }
 
 .comment-item p {
     color: white;
+    font-size: 25px;
+    font-family: "Long Cang";
 }
 
 .comment-item-inner {
@@ -506,14 +516,18 @@ source {
 }
 
 .input-group input::-webkit-input-placeholder {
-    color: rgba(255,255,255,0.8);
-    font-size: 16px;
+    color: rgba(0,0,0,0.8);
+    font-size: 25px;
+    font-family: "Liu Jian Mao Cao";
 }
 
 .input-group textarea::-webkit-input-placeholder {
     color: rgba(255,255,255,0.75);
-    font-size: 16px;
+    font-size: 30px;
+    font-family: "Long Cang";
 }
+
+
 
 /** preloader */
 .preloader {
@@ -522,7 +536,7 @@ source {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 1);
     z-index: 9;
     display: table;
 }
@@ -604,8 +618,53 @@ source {
     }
 }
 
+
+
+/* play bgm */
+.bgm {
+    position: fixed;
+    right: 30px;
+    bottom: 150px;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    color: #fff;
+    line-height: 36px;
+    text-align: center;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.bgm:hover{
+    transform: rotate(360deg);
+}
+
+
+
 /* go to top */
 .go-top {
+    position: fixed;
+    right: 30px;
+    bottom: 90px;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.go-top:hover {
+    transform: rotate(360deg);
+}
+
+
+/* go to bottom */
+.go-bottom {
     position: fixed;
     right: 30px;
     bottom: 30px;
@@ -620,8 +679,53 @@ source {
     border: 2px solid #fff;
 }
 
-.go-top:hover {
+.go-bottom:hover {
     transform: rotate(360deg);
-    transition: 1.5s ease;
 }
+
+
+
+
+
+/* footer css */
+.footer {
+    padding-top: 25px;
+    padding-bottom: 17px;
+    background: rgba(0,0,0,0.5);
+}
+
+.social {
+    margin-bottom: 30px;
+    padding-left: 100px;
+}
+
+.social li {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    border: 2px solid #fff;
+
+    margin: 0 5px;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+.social li i {
+    color: #fff;
+    transition: 0.5s ease-in;
+}
+
+
+.copyright-text p {
+    margin-bottom: 0;
+    padding-left: 92px;
+    color: white;
+}
+
+.copyright-text span{
+    font-size: 20px;
+    font-family: "Liu Jian Mao Cao", serif;
+}
+
 

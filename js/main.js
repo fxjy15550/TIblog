@@ -39,8 +39,8 @@ $(window).scroll(function () {
 
 /** window load functions */
 $(window).on('load', function () {
-    var preLoder = $(".preloader");
-    preLoder.fadeOut(1000);
+    let Loader = $(".loader-section");
+    Loader.fadeOut(1000);
 
 });
 
@@ -54,10 +54,22 @@ $('#main-menu li a').on('click', function (event) {
     }, 1000);
 });
 
+/** bg-video play and pause */
+$(document).on('click', '.bg-video', function () {
+    let video = document.getElementById('bg-mp4');
+    if (video.paused) {
+        video.play();
+        $(".fa-play").attr("class", "fa fa-pause");
+    } else {
+        video.pause();
+        $(".fa-pause").attr("class", "fa fa-play");
+    }
+});
+
+
 /** bgm play and pause */
 $(document).on('click', '.bgm', function () {
-    let music = document.getElementById('bgmusic');
-    let music_btn = document.getElementsByClassName('fa-music');
+    let music = document.getElementById('bg-music');
     if (music.paused) {
         music.play();
         $(".fa-music").attr("class", "fa fa-volume-off");

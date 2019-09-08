@@ -13,387 +13,381 @@
 </head>
 
 <body>
-<!-- video as bg -->
-<video autoplay="autoplay" loop="loop">
-    <source src="img/bg.mp4" type="video/mp4">
-</video>
 
-<!-- header section -->
-<header id="home">
-    <nav class="nav-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2">
-                    <a href="#" class="logo"><img src="img/ti.png" alt=""></a>
-                </div>
-                <div class="col-md-10">
-                    <ul id="main-menu">
-                        <li><a href="#home">主页</a></li>
-                        <li><a href="#about">个人简介</a></li>
-                        <li><a href="#blog">博海拾珠</a></li>
-                        <li><a href="#sata">访客数据</a></li>
-                        <li><a href="#comment">留言板</a></li>
-                    </ul>
+    <!-- header section -->
+    <header id="home">
+        <nav class="nav-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <a href="#" class="logo"><img src="img/ti.png" alt=""></a>
+                    </div>
+                    <div class="col-md-10">
+                        <ul id="main-menu">
+                            <li><a href="#home">主页</a></li>
+                            <li><a href="#about">个人简介</a></li>
+                            <li><a href="#blog">博海拾珠</a></li>
+                            <li><a href="#sata">访客数据</a></li>
+                            <li><a href="#comment">留言板</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+        </nav>
+
+        <div class="welcome">
+            <h1>你好，</h1>
+            <h1>欢迎来到</h1>
+            <h1>我的个人网站</h1>
         </div>
-    </nav>
+    </header>
 
-    <div class="welcome">
-        <h1>你好，</h1>
-        <h1>欢迎来到</h1>
-        <h1>我的个人网站</h1>
-    </div>
-</header>
-
-<!-- main section -->
-<main>
-    <section class="about" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 self-photo">
-                    <img src="img/team-2.png" alt="profile picture">
-                </div>
-                <div class="col-md-6">
-                    <div class="section-title">
-                        <div></div>
-                        <h2>个人简介</h2>
+    <!-- main section -->
+    <main>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 self-photo">
+                        <img src="img/team-2.png" alt="profile picture">
                     </div>
-                    <p>时间不在于你拥有多少，而在于怎样使用</p>
+                    <div class="col-md-6">
+                        <div class="section-title">
+                            <div></div>
+                            <h2>个人简介</h2>
+                        </div>
+                        <p>时间不在于你拥有多少，而在于怎样使用</p>
 
-                    <ul>
-                        <li><strong>Name :</strong> Tan Mingyao</li>
-                        <li><strong>Age :</strong> 20</li>
-                        <li><strong>Address :</strong> OUC</li>
-                        <li><strong>Email :</strong> tmyyes@163.com</li>
-                        <li><strong>Phone :</strong> 18954251409</li>
-                        <li><strong>QQ :</strong> 1491736836</li>
-                        <li><strong>Job :</strong> Student OUCer</li>
-                        <li><strong>Freelancer :</strong> available</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="blog" id="blog">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 blog-header">
-                    <div class="section-title">
-                        <div></div>
-                        <h2>博海拾珠</h2>
+                        <ul>
+                            <li><strong>Name :</strong> Tan Mingyao</li>
+                            <li><strong>Age :</strong> 20</li>
+                            <li><strong>Address :</strong> OUC</li>
+                            <li><strong>Email :</strong> tmyyes@163.com</li>
+                            <li><strong>Phone :</strong> 18954251409</li>
+                            <li><strong>QQ :</strong> 1491736836</li>
+                            <li><strong>Job :</strong> Student OUCer</li>
+                            <li><strong>Freelancer :</strong> available</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="card-columns">
-                <div class="card">
-                    <img src="img/blog-2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Apache HTTP Server 与 Tomcat 的三种连接方式介绍</h5>
-                        <p class="card-text">首先我们先介绍一下为什么要让 Apache 与 Tomcat 之间进行连接。事实上 Tomcat 本身已经提供了 HTTP 服务，该服务默认的端口是
-                            8080，装好 tomcat 后通过 8080 端口可以直接使用 Tomcat 所运行的应用程序，你也可以将该端口改为 80。
-                            既然 Tomcat 本身已经可以提供这样的服务，我们为什么还要引入 Apache 或者其他的一些专门的 HTTP 服务器呢？原因有下面几个：<br>
-                            1. 提升对静态文件的处理性能<br>
-                            2. 利用 Web 服务器来做负载均衡及容错<br>
-                            3. 无缝的升级应用程序</p>
-                        <a href="https://www.ibm.com/developerworks/cn/opensource/os-lo-apache-tomcat/index.html"
-                           class="boxed-btn" target="_blank">read more</a>
-                    </div>
-                </div>
-                <div class="card text-white p-3"
-                     onclick="window.open('https://www.cnblogs.com/zhangpengnike/p/5545715.html')">
-                    <blockquote class="blockquote mb-0 card-body">
-                        <p>常用的SQL语句</p>
-                        <footer class="blockquote-footer">
-                            <small class="text-muted">
-                                zhangzhenpeng <cite title="Source Title">博客园</cite>
-                            </small>
-                        </footer>
-                    </blockquote>
-                </div>
-                <div class="card">
-                    <img src="img/blog-1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">基于ShopNC的网上开店模拟实训系统</h5>
-                        <p class="card-text">基于ShopNC的网上开店模拟实训系统，1：1完全仿制淘宝网</p>
-                        <a href="https://www.5xiaobo.com/?id=775" target="_blank" class="boxed-btn">Read More</a>
-                    </div>
-                </div>
-                <div class="card bg-primary text-white text-center p-3"
-                     onclick="window.open('https://blog.csdn.net/wqmain/article/details/8941759')">
-                    <blockquote class="blockquote mb-0">
-                        <p>Windows 下 Apache HTTP Server 安装、配置以及与 Tomcat 的整合</p>
-                        <footer class="blockquote-footer text-white">
-                            <small>
-                                千骑卷平冈 <cite title="Source Title">CSDN</cite>
-                            </small>
-                        </footer>
-                    </blockquote>
-                </div>
-                <div class="card" onclick="window.open('https://getbootstrap.com/')">
-                    <img src="img/bootstrap.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Bootstrap——世界上最流行的HTML，CSS和JS库</h5>
-                    </div>
-                </div>
+        </section>
 
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">使用IntelliJ IDEA开发SpringMVC网站</h5>
-                        <p class="card-text">由于近期一直在做学术方面的工作，项目开发相关工作并没有花太多的时间，
-                            导致这篇文章的更新停步了很长一段时间。现在应大家的要求，补上剩余部分，望能给大家带来一些帮助。
-                            由于时间的原因，在开发环境上面有了一定的更新，但是并不造成太大的影响</p>
-                        <p class="card-text"><small class="text-muted">转载请注明出处：Gaussic</small></p>
-                        <a href="https://my.oschina.net/gaussik/blog/385697"
-                           class="boxed-btn" target="_blank">read more</a>
+        <section class="blog" id="blog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 blog-header">
+                        <div class="section-title">
+                            <div></div>
+                            <h2>博海拾珠</h2>
+                        </div>
                     </div>
                 </div>
-
-                <div class="card" onclick="window.open('https://mvnrepository.com/')">
-                    <img src="img/mvn.jpg" class="card-img-top" alt="mvn">
-                </div>
-
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">使用IntelliJ IDEA开发SpringMVC网站</h5>
-                        <p class="card-text">由于近期一直在做学术方面的工作，项目开发相关工作并没有花太多的时间，
-                            导致这篇文章的更新停步了很长一段时间。现在应大家的要求，补上剩余部分，望能给大家带来一些帮助。
-                            由于时间的原因，在开发环境上面有了一定的更新，但是并不造成太大的影响</p>
-                        <p class="card-text"><small class="text-muted">转载请注明出处：Gaussic</small></p>
-                        <a href="https://my.oschina.net/gaussik/blog/385697"
-                           class="boxed-btn" target="_blank">read more</a>
+                <div class="card-columns">
+                    <div class="card">
+                        <img src="img/blog-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Apache HTTP Server 与 Tomcat 的三种连接方式介绍</h5>
+                            <p class="card-text">首先我们先介绍一下为什么要让 Apache 与 Tomcat 之间进行连接。事实上 Tomcat 本身已经提供了 HTTP 服务，该服务默认的端口是 8080，装好 tomcat 后通过 8080 端口可以直接使用 Tomcat 所运行的应用程序，你也可以将该端口改为 80。 既然 Tomcat 本身已经可以提供这样的服务，我们为什么还要引入 Apache 或者其他的一些专门的 HTTP 服务器呢？原因有下面几个：<br> 1. 提升对静态文件的处理性能<br>                                2. 利用 Web 服务器来做负载均衡及容错<br> 3. 无缝的升级应用程序</p>
+                            <a href="https://www.ibm.com/developerworks/cn/opensource/os-lo-apache-tomcat/index.html" class="boxed-btn" target="_blank">read more</a>
+                        </div>
                     </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">使用IntelliJ IDEA开发SpringMVC网站</h5>
-                        <p class="card-text">由于近期一直在做学术方面的工作，项目开发相关工作并没有花太多的时间，
-                            导致这篇文章的更新停步了很长一段时间。现在应大家的要求，补上剩余部分，望能给大家带来一些帮助。
-                            由于时间的原因，在开发环境上面有了一定的更新，但是并不造成太大的影响</p>
-                        <p class="card-text"><small class="text-muted">转载请注明出处：Gaussic</small></p>
-                        <a href="https://my.oschina.net/gaussik/blog/385697"
-                           class="boxed-btn" target="_blank">read more</a>
+                    <div class="card text-white p-3" onclick="window.open('https://www.cnblogs.com/zhangpengnike/p/5545715.html')">
+                        <blockquote class="blockquote mb-0 card-body">
+                            <p>常用的SQL语句</p>
+                            <footer class="blockquote-footer">
+                                <small class="text-muted">
+                                    zhangzhenpeng <cite title="Source Title">博客园</cite>
+                                </small>
+                            </footer>
+                        </blockquote>
                     </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- sata section -->
-    <section class="sata" id="sata">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 sata-header">
-                    <div class="section-title">
-                        <div></div>
-                        <h2>访客数据</h2>
+                    <div class="card">
+                        <img src="img/blog-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">基于ShopNC的网上开店模拟实训系统</h5>
+                            <p class="card-text">基于ShopNC的网上开店模拟实训系统，1：1完全仿制淘宝网</p>
+                            <a href="https://www.5xiaobo.com/?id=775" target="_blank" class="boxed-btn">Read More</a>
+                        </div>
                     </div>
+                    <div class="card bg-primary text-white text-center p-3" onclick="window.open('https://blog.csdn.net/wqmain/article/details/8941759')">
+                        <blockquote class="blockquote mb-0">
+                            <p>Windows 下 Apache HTTP Server 安装、配置以及与 Tomcat 的整合</p>
+                            <footer class="blockquote-footer text-white">
+                                <small>
+                                    千骑卷平冈 <cite title="Source Title">CSDN</cite>
+                                </small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="card" onclick="window.open('https://getbootstrap.com/')">
+                        <img src="img/bootstrap.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bootstrap——世界上最流行的HTML，CSS和JS库</h5>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">使用IntelliJ IDEA开发SpringMVC网站</h5>
+                            <p class="card-text">由于近期一直在做学术方面的工作，项目开发相关工作并没有花太多的时间， 导致这篇文章的更新停步了很长一段时间。现在应大家的要求，补上剩余部分，望能给大家带来一些帮助。 由于时间的原因，在开发环境上面有了一定的更新，但是并不造成太大的影响
+                            </p>
+                            <p class="card-text"><small class="text-muted">转载请注明出处：Gaussic</small></p>
+                            <a href="https://my.oschina.net/gaussik/blog/385697" class="boxed-btn" target="_blank">read
+                                more</a>
+                        </div>
+                    </div>
+
+                    <div class="card" onclick="window.open('https://mvnrepository.com/')">
+                        <img src="img/mvn.jpg" class="card-img-top" alt="mvn">
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">使用IntelliJ IDEA开发SpringMVC网站</h5>
+                            <p class="card-text">由于近期一直在做学术方面的工作，项目开发相关工作并没有花太多的时间， 导致这篇文章的更新停步了很长一段时间。现在应大家的要求，补上剩余部分，望能给大家带来一些帮助。 由于时间的原因，在开发环境上面有了一定的更新，但是并不造成太大的影响
+                            </p>
+                            <p class="card-text"><small class="text-muted">转载请注明出处：Gaussic</small></p>
+                            <a href="https://my.oschina.net/gaussik/blog/385697" class="boxed-btn" target="_blank">read
+                                more</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">使用IntelliJ IDEA开发SpringMVC网站</h5>
+                            <p class="card-text">由于近期一直在做学术方面的工作，项目开发相关工作并没有花太多的时间， 导致这篇文章的更新停步了很长一段时间。现在应大家的要求，补上剩余部分，望能给大家带来一些帮助。 由于时间的原因，在开发环境上面有了一定的更新，但是并不造成太大的影响
+                            </p>
+                            <p class="card-text"><small class="text-muted">转载请注明出处：Gaussic</small></p>
+                            <a href="https://my.oschina.net/gaussik/blog/385697" class="boxed-btn" target="_blank">read
+                                more</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12 text-center text-uppercase">
-                    <ul>
-                        <li>
-                            <div class="sata-item">
-                                <div class="icon">
-                                    <img src="img/project.png" alt="project done image">
-                                </div>
-                                <span class="number">
-										2345
-									</span>
-                                <h4>访客</h4>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="sata-item">
-                                <div class="icon">
-                                    <img src="img/like.png" alt="project done image">
-                                </div>
-                                <span class="number">
-										2555
-									</span>
-                                <h4>点赞</h4>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="sata-item">
-                                <div class="icon">
-                                    <img src="img/contact-icon-2.png" alt="project done image">
-                                </div>
-                                <span class="number">
-										2357
-									</span>
-                                <h4>留言</h4>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- comment section -->
-    <section class="comment" id="comment">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 comment-header">
-                    <div class="section-title">
-                        <div></div>
-                        <h2>留言板</h2>
+        <!-- sata section -->
+        <section class="sata" id="sata">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 sata-header">
+                        <div class="section-title">
+                            <div></div>
+                            <h2>访客数据</h2>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row comment-text">
-                <div class="col-lg-12">
-                    <div class="comment-item">
-                        <div class="comment-item-inner">
-                            <img src="img/person-1.jpg" alt="Image" class="rounded-circle comment-img">
-                            <div class="comment-connector">
-                                <p class="mb-0">&nbsp;</p>
-                            </div>
-                            <div class="comment-info">
-                                <div class="comment-description">
-                                    <h4>梦回故里</h4>
-                                    <p>太牛了，清新的设计，让人爱不释手</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comment-connector-vertical"></div>
-                    </div>
-                    <div class="comment-item">
-                        <div class="comment-item-inner">
-                            <img src="img/person-1.jpg" alt="Image" class="rounded-circle comment-img">
-                            <div class="comment-connector">
-                                <p class="mb-0">&nbsp;</p>
-                            </div>
-                            <div class="comment-info">
-                                <div class="comment-description">
-                                    <h4>vera</h4>
-                                    <p>在你的网站上，我看到了最美的风景</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comment-connector-vertical"></div>
-                    </div>
-                    <div class="comment-item">
-                        <div class="comment-item-inner">
-                            <img src="img/person-1.jpg" alt="Image" class="rounded-circle comment-img">
-                            <div class="comment-connector">
-                                <p class="mb-0">&nbsp;</p>
-                            </div>
-                            <div class="comment-info">
-                                <div class="comment-description">
-                                    <h4>天臻</h4>
-                                    <p>简约，好看，看了你的知识图片，哇 真强大</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comment-connector-vertical"></div>
-                    </div><div class="comment-item">
-                    <div class="comment-item-inner">
-                        <img src="img/person-1.jpg" alt="Image" class="rounded-circle comment-img">
-                        <div class="comment-connector">
-                            <p class="mb-0">&nbsp;</p>
-                        </div>
-                        <div class="comment-info">
-                            <div class="comment-description">
-                                <h4>小侯子</h4>
-                                <p>哇~网站非常好看~舒适清新~</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="comment-connector-vertical"></div>
-                </div><div class="comment-item">
-                    <div class="comment-item-inner">
-                        <img src="img/person-1.jpg" alt="Image" class="rounded-circle comment-img">
-                        <div class="comment-connector">
-                            <p class="mb-0">&nbsp;</p>
-                        </div>
-                        <div class="comment-info">
-                            <div class="comment-description">
-                                <h4>失丶忆</h4>
-                                <p>简约，好看，看了你的知识图片，哇 真强大</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="comment-connector-vertical"></div>
-                </div>
-
-
-                    <div class="comment-item comment-input">
-                        <div class="comment-item-inner">
-                            <div class="comment-info">
-                                <div class="comment-description pb-0">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="昵称" aria-label="Title">
+                <div class="row">
+                    <div class="col-md-12 text-center text-uppercase">
+                        <ul>
+                            <li>
+                                <div class="sata-item">
+                                    <div class="icon">
+                                        <img src="img/project.png" alt="project done image">
                                     </div>
-                                    <div class="input-group">
-                                        <textarea class="form-control" placeholder="留下你的足迹吧......"
-                                                  aria-label="With textarea"></textarea>
+                                    <span class="number">
+                                        2345
+                                    </span>
+                                    <h4>访客</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sata-item">
+                                    <div class="icon">
+                                        <img src="img/like.png" alt="project done image">
                                     </div>
-                                    <a href="#" class="boxed-btn">提交</a>
+                                    <span class="number">
+                                        2555
+                                    </span>
+                                    <h4>点赞</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sata-item">
+                                    <div class="icon">
+                                        <img src="img/contact-icon-2.png" alt="project done image">
+                                    </div>
+                                    <span class="number">
+                                        2357
+                                    </span>
+                                    <h4>留言</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- comment section -->
+        <section class="comment" id="comment">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 comment-header">
+                        <div class="section-title">
+                            <div></div>
+                            <h2>留言板</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row comment-text">
+                    <div class="col-lg-12">
+                        <div class="comment-item">
+                            <div class="comment-item-inner">
+                                <img src="img/person-1.jpg" alt="Image" class="rounded-circle comment-img">
+                                <div class="comment-connector">
+                                    <p class="mb-0">&nbsp;</p>
+                                </div>
+                                <div class="comment-info">
+                                    <div class="comment-description">
+                                        <h4>梦回故里</h4>
+                                        <p>太牛了，清新的设计，让人爱不释手</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="comment-connector">
-                                <p class="mb-0">&nbsp;</p>
+                            <div class="comment-connector-vertical"></div>
+                        </div>
+                        <div class="comment-item">
+                            <div class="comment-item-inner">
+                                <img src="img/person-1.jpg" alt="Image" class="rounded-circle comment-img">
+                                <div class="comment-connector">
+                                    <p class="mb-0">&nbsp;</p>
+                                </div>
+                                <div class="comment-info">
+                                    <div class="comment-description">
+                                        <h4>vera</h4>
+                                        <p>在你的网站上，我看到了最美的风景</p>
+                                    </div>
+                                </div>
                             </div>
-                            <img src="img/person-1.jpg" alt="Image" class="rounded-circle comment-img">
+                            <div class="comment-connector-vertical"></div>
+                        </div>
+                        <div class="comment-item">
+                            <div class="comment-item-inner">
+                                <img src="img/person-1.jpg" alt="Image" class="rounded-circle comment-img">
+                                <div class="comment-connector">
+                                    <p class="mb-0">&nbsp;</p>
+                                </div>
+                                <div class="comment-info">
+                                    <div class="comment-description">
+                                        <h4>天臻</h4>
+                                        <p>简约，好看，看了你的知识图片，哇 真强大</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-connector-vertical"></div>
+                        </div>
+                        <div class="comment-item">
+                            <div class="comment-item-inner">
+                                <img src="img/person-1.jpg" alt="Image" class="rounded-circle comment-img">
+                                <div class="comment-connector">
+                                    <p class="mb-0">&nbsp;</p>
+                                </div>
+                                <div class="comment-info">
+                                    <div class="comment-description">
+                                        <h4>小侯子</h4>
+                                        <p>哇~网站非常好看~舒适清新~</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-connector-vertical"></div>
+                        </div>
+                        <div class="comment-item">
+                            <div class="comment-item-inner">
+                                <img src="img/person-1.jpg" alt="Image" class="rounded-circle comment-img">
+                                <div class="comment-connector">
+                                    <p class="mb-0">&nbsp;</p>
+                                </div>
+                                <div class="comment-info">
+                                    <div class="comment-description">
+                                        <h4>失丶忆</h4>
+                                        <p>简约，好看，看了你的知识图片，哇 真强大</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-connector-vertical"></div>
+                        </div>
 
+
+                        <div class="comment-item comment-input">
+                            <div class="comment-item-inner">
+                                <div class="comment-info">
+                                    <div class="comment-description pb-0">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="昵称" aria-label="Title">
+                                        </div>
+                                        <div class="input-group">
+                                            <textarea class="form-control" placeholder="留下你的足迹吧......" aria-label="With textarea"></textarea>
+                                        </div>
+                                        <a href="#" class="boxed-btn">提交</a>
+                                    </div>
+                                </div>
+                                <div class="comment-connector">
+                                    <p class="mb-0">&nbsp;</p>
+                                </div>
+                                <img src="img/person-1.jpg" alt="Image" class="rounded-circle comment-img">
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-</main>
+        </section>
+    </main>
 
 
-<!-- footer section-->
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <ul class="social">
-                    <li><a href="#"><i class="fa fa-weixin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-qq"></i></a></li>
-                    <li><a href="#"><i class="fa fa-weibo"></i></a></li>
-                    <li><a href="#"><i class="fa fa-edge"></i></a></li>
-                    <li><a href="#"><i class="fa fa-chrome"></i></a></li>
-                </ul>
-                <div class="copyright-text">
-                    <p>Copyright &copy; 2019 <span>中国海洋大学 </span>|<span> 谭明耀</span></p>
+    <!-- footer section-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <ul class="social">
+                        <li><a href="#"><i class="fa fa-weixin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-qq"></i></a></li>
+                        <li><a href="#"><i class="fa fa-weibo"></i></a></li>
+                        <li><a href="#"><i class="fa fa-edge"></i></a></li>
+                        <li><a href="#"><i class="fa fa-chrome"></i></a></li>
+                    </ul>
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2019 <span>中国海洋大学 </span>|<span> 谭明耀</span></p>
+                    </div>
                 </div>
             </div>
         </div>
+    </footer>
+
+
+    <!--loader section-->
+    <div class="loader-section">
+        <div class="loader">
+            <div class="loader-outer"></div>
+            <div class="loader-inner"></div>
+        </div>
     </div>
-</footer>
 
 
-<!--preloader section-->
-<div class="preloader">
-    <div class="preloader-inner">
-        <div class="cssload-box-loading"></div>
-    </div>
-</div>
+    <!-- video as bg -->
+    <video autoplay="autoplay" loop="loop" id="bg-mp4">
+        <source src="img/bg.mp4" type="video/mp4">
+    </video>
+    <span class="bg-video"><i class="fa fa-pause"></i></span>
 
-<!-- mp3 as bgm -->
-<audio loop="loop" preload="auto" id="bgmusic">
-    <source src="music/Pearlescent.mp3">
-</audio>
-<span class="bgm"><i class="fa fa-music"></i></span>
+    <!-- bgm -->
+    <audio loop="loop" preload="auto" id="bg-music">
+        <source src="music/Pearlescent.mp3">
+    </audio>
+    <span class="bgm"><i class="fa fa-music"></i></span>
 
-<!--go to top -->
-<span class="go-top"><i class="fa fa-angle-double-up"></i></span>
+    <!--go to top -->
+    <span class="go-top"><i class="fa fa-angle-double-up"></i></span>
 
-<!--go to bottom -->
-<span class="go-bottom"><i class="fa fa-angle-double-down"></i></span>
+    <!--go to bottom -->
+    <span class="go-bottom"><i class="fa fa-angle-double-down"></i></span>
 
-<script src="js/jquery-3.4.1.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/main.js"></script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

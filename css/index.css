@@ -1,6 +1,6 @@
 /* Google Font */
-
 @import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Long+Cang|Ma+Shan+Zheng|Noto+Sans+SC|Noto+Serif+SC|ZCOOL+KuaiLe|ZCOOL+QingKe+HuangYou|ZCOOL+XiaoWei|Zhi+Mang+Xing&display=swap');
+
 video {
     position: fixed;
     right: 0;
@@ -27,7 +27,6 @@ source {
 /**
     btn css
  */
-
 .boxed-btn {
     display: inline-block;
     padding: 10px;
@@ -46,8 +45,7 @@ source {
     text-decoration: none;
 }
 
-.boxed-btn:before,
-.boxed-btn:after {
+.boxed-btn:before, .boxed-btn:after {
     position: absolute;
     top: 0;
     width: 50%;
@@ -89,6 +87,7 @@ source {
 }
 
 
+
 /**
     section title css
  */
@@ -105,11 +104,10 @@ source {
     border-radius: 100%;
     box-shadow: 0 0 50px;
     margin-right: 12px;
-    margin-top: 10px;
+    margin-top: 14px;
 }
 
-.section-title div:before,
-.section-title div:after {
+.section-title div:before, .section-title div:after {
     display: block;
     content: "";
     margin-left: -6px;
@@ -130,13 +128,12 @@ source {
     color: white;
     font-size: 40px;
     font-family: "Ma Shan Zheng";
-}
 
+}
 
 /**
     nav-bar css
  */
-
 .nav-area {
     position: relative;
     left: 0;
@@ -265,7 +262,6 @@ source {
     bottom: -4px;
 }
 
-
 /**
     welcome css
  */
@@ -287,11 +283,9 @@ source {
     font-family: "ZCOOL XiaoWei";
 }
 
-
 /**
     about css
  */
-
 .about {
     margin-top: 50px;
     padding-top: 80px;
@@ -322,7 +316,6 @@ source {
 /**
     blog css
  */
-
 .blog {
     padding: 80px;
 }
@@ -342,15 +335,13 @@ source {
 }
 
 .blog .card:hover {
-    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0,0.4);
     transition: 1s;
 }
-
 
 /**
     sata css
  */
-
 .sata-header {
     padding-left: 480px;
     padding-bottom: 30px;
@@ -411,11 +402,9 @@ source {
     transition: 0.4s ease-in;
 }
 
-
 /**
     comment css
  */
-
 .comment-header {
     padding-left: 496px;
     padding-top: 94px;
@@ -512,8 +501,7 @@ source {
     margin-left: 220px;
 }
 
-.comment .comment-item .boxed-btn:before,
-.comment .comment-item .boxed-btn:after {
+.comment .comment-item .boxed-btn:before, .comment .comment-item .boxed-btn:after {
     color: white;
     background: #fff;
 }
@@ -528,13 +516,13 @@ source {
 }
 
 .input-group input::-webkit-input-placeholder {
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0,0,0,0.8);
     font-size: 25px;
     font-family: "Liu Jian Mao Cao";
 }
 
 .input-group textarea::-webkit-input-placeholder {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255,255,255,0.75);
     font-size: 30px;
     font-family: "Long Cang";
 }
@@ -542,14 +530,14 @@ source {
 
 /* loader css */
 
-.loader-section {
+.loader-section{
     position: fixed;
     width: 100%;
     height: 100%;
     background: rgb(17, 14, 16);
     display: table;
-    top: 0;
-    left: 0;
+    top:0;
+    left:0;
     z-index: 9;
 }
 
@@ -597,6 +585,7 @@ source {
     }
 }
 
+
 @keyframes loader-inner {
     0% {
         transform: rotate(0deg);
@@ -607,8 +596,99 @@ source {
 }
 
 
-/* play bg-video */
 
+/** preloader */
+/*.preloader {*/
+/*    position: fixed;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    background: rgba(255, 255, 255, 1);*/
+/*    z-index: 9;*/
+/*    display: table;*/
+/*}*/
+
+/*.preloader-inner {*/
+/*    display: table-cell;*/
+/*    vertical-align: middle;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.preloader-inner .cssload-box-loading {*/
+/*    width: 44px;*/
+/*    height: 44px;*/
+/*    margin: auto;*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    top: 0;*/
+/*    bottom: 0;*/
+/*}*/
+
+/*.preloader-inner .cssload-box-loading:before {*/
+/*    content: '';*/
+/*    width: 44px;*/
+/*    height: 4px;*/
+/*    background: black;*/
+/*    opacity: 0.1;*/
+/*    position: absolute;*/
+/*    top: 52px;*/
+/*    left: 0;*/
+/*    border-radius: 50%;*/
+/*    animation-duration: 0.5s;*/
+/*    animation-iteration-count: infinite;*/
+/*    animation-name: shadow;*/
+/*    animation-direction: linear;*/
+/*}*/
+
+/*.preloader-inner .cssload-box-loading:after {*/
+/*    content: '';*/
+/*    width: 44px;*/
+/*    height: 44px;*/
+/*    background: black;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    border-radius: 3px;*/
+/*    animation-duration: 0.5s;*/
+/*    animation-iteration-count: infinite;*/
+/*    animation-name: cssload-animate;*/
+/*    animation-direction: linear;*/
+/*}*/
+
+/*@keyframes cssload-animate {*/
+/*    17% {*/
+/*        border-bottom-right-radius: 3px;*/
+/*    }*/
+/*    25% {*/
+/*        transform: translateY(8px) rotate(22.5deg);*/
+/*    }*/
+/*    50% {*/
+/*        transform: translateY(16px) scale(1, 0.9) rotate(45deg);*/
+/*        border-bottom-right-radius: 35px;*/
+/*    }*/
+/*    75% {*/
+/*        transform: translateY(8px) rotate(67.5deg);*/
+/*    }*/
+/*    100% {*/
+/*        transform: translateY(0) rotate(90deg);*/
+/*    }*/
+/*}*/
+
+/*@keyframes shadow {*/
+/*    0%,*/
+/*    100% {*/
+/*        transform: scale(1, 1);*/
+/*    }*/
+/*    50% {*/
+/*        transform: scale(1.2, 1);*/
+/*    }*/
+/*}*/
+
+
+
+/* play bg-video */
 .bg-video {
     position: fixed;
     right: 30px;
@@ -624,13 +704,13 @@ source {
     border: 2px solid #fff;
 }
 
-.bg-video:hover {
+.bg-video:hover{
     transform: rotate(360deg);
 }
 
 
-/* play bgm */
 
+/* play bgm */
 .bgm {
     position: fixed;
     right: 30px;
@@ -646,13 +726,14 @@ source {
     border: 2px solid #fff;
 }
 
-.bgm:hover {
+.bgm:hover{
     transform: rotate(360deg);
 }
 
 
-/* go to top */
 
+
+/* go to top */
 .go-top {
     position: fixed;
     right: 30px;
@@ -674,7 +755,6 @@ source {
 
 
 /* go to bottom */
-
 .go-bottom {
     position: fixed;
     right: 30px;
@@ -695,12 +775,12 @@ source {
 }
 
 
-/* footer css */
 
+/* footer css */
 .footer {
     padding-top: 25px;
     padding-bottom: 17px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0,0,0,0.5);
 }
 
 .social {
@@ -714,6 +794,7 @@ source {
     height: 40px;
     background: #000;
     border: 2px solid #fff;
+
     margin: 0 5px;
     line-height: 35px;
     cursor: pointer;
@@ -724,13 +805,16 @@ source {
     transition: 0.5s ease-in;
 }
 
+
 .copyright-text p {
     margin-bottom: 0;
     padding-left: 92px;
     color: white;
 }
 
-.copyright-text span {
+.copyright-text span{
     font-size: 20px;
     font-family: "Liu Jian Mao Cao", serif;
 }
+
+
